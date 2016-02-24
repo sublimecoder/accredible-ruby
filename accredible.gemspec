@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name          = 'accredible'
+  s.name          = 'accredible-ruby'
   s.version       = Accredible::VERSION
   s.required_ruby_version = '>= 2.0.0'
   s.date          = '2016-02-24'
