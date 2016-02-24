@@ -13,11 +13,11 @@ Gem::Specification.new do |s|
   s.homepage      = 'https://github.com/sublimecoder/accredible'
   s.license       = 'MIT'
 
-  s.add_dependency("httparty")
+  s.add_dependency("httparty", "~> 0.13")
 
-  s.add_development_dependency("byebug")
-  s.add_development_dependency("pry")
-  s.add_development_dependency("pry-byebug")
-  s.add_development_dependency('rake')
-  s.add_development_dependency('rspec')
+  s.add_development_dependency("byebug", "~> 8.2")
+  s.add_development_dependency("pry", "~> 0.10")
+  s.add_development_dependency("pry-byebug", "~> 3.3")
+  s.add_development_dependency("rake", "~> 10.5")
+  s.add_development_dependency("rspec", "~> 3.4")
 end

@@ -1,0 +1,6 @@
+/accredible-ruby-*.gem
+/Gemfile.lock
+.rvmrc
+Gemfile.lock
+tags
+
