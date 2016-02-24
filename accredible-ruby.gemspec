@@ -1,3 +1,5 @@
+require File.expand_path('../lib/accredible-ruby/version', __FILE__)
+
 Gem::Specification.new do |s|
   s.name          = 'accredible-ruby'
   s.version       = Accredible::VERSION
