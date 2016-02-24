@@ -10,4 +10,12 @@ Gem::Specification.new do |s|
   s.files         = ["lib/accredible.rb"]
   s.homepage      = 'https://github.com/sublimecoder/accredible'
   s.license       = 'MIT'
+
+  s.add_dependency("httparty")
+
+  s.add_development_dependency("byebug")
+  s.add_development_dependency("pry")
+  s.add_development_dependency("pry-byebug")
+  s.add_development_dependency('rake')
+  s.add_development_dependency('rspec')
 end
