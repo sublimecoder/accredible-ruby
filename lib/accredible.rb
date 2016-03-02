@@ -35,7 +35,7 @@ module Accredible
   end
 
   def self.check_api_key
-    if api_key == API_KEY_NOT_SET
+    if api_key == API_KEY_NOT_SET || api_key.nil?
       raise  AuthenticationError.new('No API key provided. ' \
                                      'Set your API key using "Accredible.api_key = <API-KEY>". ' \
                                      'If you need an api key please visit https://accredible.com for ' \

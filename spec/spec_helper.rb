@@ -21,6 +21,6 @@ RSpec.configure do |config|
   config.before(:each) do
     stub_request(:any, /api.accredible.com/).
       with(:headers => {'Content-Type'=>'application/json'}).
-      to_return(:status => 200, :body => "", :headers => {})
+      to_return(:status => 200, :body => "Stubbed Request", :headers => {})
   end
 end

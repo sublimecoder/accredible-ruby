@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.description   = "A simple gem for interacting with the accredible certificate API"
   s.authors       = ["Jared Smith"]
   s.email         = 'jared.smith88@me.com'
-  s.files         = ["lib/accredible.rb"]
+  s.require_paths = ['lib']
   s.homepage      = 'https://github.com/sublimecoder/accredible'
   s.license       = 'MIT'
 
