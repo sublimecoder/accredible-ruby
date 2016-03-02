@@ -23,7 +23,7 @@ module Accredible
     end
 
     def self.view_all(achievement_id, email)
-      uri = Credential.new.view_all_end_point(achievement_id, email)
+      uri = Credential.view_all_end_point(achievement_id, email)
       Accredible.request(uri)
     end
 

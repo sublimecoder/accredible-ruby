@@ -14,13 +14,13 @@ RSpec.configure do |config|
     mocks.verify_partial_doubles = true
   end
 
-  config.before(:all) do
+  config.before(:each) do
     Accredible.api_key = "default_api_key"
   end
 
   config.before(:each) do
     stub_request(:any, /api.accredible.com/).
-      with(:headers => {'Authorization'=>'Token token=default_api_key', 'Content-Type'=>'application/json'}).
+      with(:headers => {'Content-Type'=>'application/json'}).
       to_return(:status => 200, :body => "", :headers => {})
   end
 end

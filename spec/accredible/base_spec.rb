@@ -10,4 +10,9 @@ describe Accredible do
 
     expect(Accredible.api_url("credential")).to include("credential")
   end
+
+  it "should return an error if no api key is set" do
+    Accredible.api_key = "No API Key" # reset api key to out of the box default
+    expect {Accredible::Credential.view_all("123", "example@example.com")}.to raise_error(Accredible::AuthenticationError)
+  end
 end

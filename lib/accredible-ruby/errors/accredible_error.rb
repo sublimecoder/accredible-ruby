@@ -6,8 +6,8 @@ module Accredible
 
     def initialize(message=nil, status=nil, body=nil)
       @message = message
-      @http_status = http_status
-      @body = json_body
+      @http_status = status
+      @body = body
     end
 
     def to_s
