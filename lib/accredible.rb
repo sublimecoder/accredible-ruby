@@ -26,6 +26,10 @@ module Accredible
     Accredible.check_api_key
     if method == :get
       RestClient.get(end_point_url, request_headers) 
+    elsif method == :put
+      RestClient.put(end_point_url, values, request_headers)
+    elsif method == :delete
+      RestClient.delete(end_point_url)
     else
       RestClient.post(end_point_url, values, request_headers)
     end

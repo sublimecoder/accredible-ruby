@@ -24,5 +24,9 @@ RSpec.configure do |config|
     stub_request(:any, /api.accredible.com/).
       with(:headers => {'Content-Type'=>'application/json'}).
       to_return(:status => 200, :body => "Stubbed Request", :headers => {})
+
+    stub_request(:delete, /api.accredible.com/).
+      with(:headers => {'Accept'=>'*/*; q=0.5, application/xml', 'Accept-Encoding'=>'gzip, deflate', 'User-Agent'=>'Ruby'}).
+      to_return(:status => 200, :body => "Stubbed Request", :headers => {})
   end
 end
