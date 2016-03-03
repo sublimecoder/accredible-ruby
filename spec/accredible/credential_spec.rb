@@ -6,9 +6,8 @@ describe Accredible::Credential do
 
     expect(credentials).to eq("Stubbed Request")
   end
-  
 
-  it "should return a list of credentials when view_all is called" do
+  it "should return a list of credential when view is called" do
     cred = credential.view("1234")
 
     expect(cred).to eq("Stubbed Request")

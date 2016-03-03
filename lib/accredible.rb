@@ -2,13 +2,15 @@ require "accredible-ruby/version"
 require "accredible-ruby/credential"
 require "accredible-ruby/errors/accredible_error"
 require "accredible-ruby/errors/authentication_error"
-require 'rest-client'
+require "accredible-ruby/util"
+require "json"
+require "rest-client"
 
 module Accredible
   include RestClient
   API_KEY_NOT_SET = "No API Key"
 
-  @api_base = 'https://api.accredible.com'
+  @api_base = "https://api.accredible.com"
   @api_version = "v1"
   @api_key = API_KEY_NOT_SET
 
@@ -36,10 +38,10 @@ module Accredible
 
   def self.check_api_key
     if api_key == API_KEY_NOT_SET || api_key.nil?
-      raise  AuthenticationError.new('No API key provided. ' \
-                                     'Set your API key using "Accredible.api_key = <API-KEY>". ' \
-                                     'If you need an api key please visit https://accredible.com for ' \
-                                     'details, or email support@accredible.com ')
+      raise  AuthenticationError.new("No API key provided. " \
+                                     "Set your API key using \"Accredible.api_key = <API-KEY>\". " \
+                                     "If you need an api key please visit https://accredible.com for " \
+                                     "details, or email support@accredible.com ")
     end
   end
 end
