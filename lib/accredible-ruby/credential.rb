@@ -1,6 +1,5 @@
 module Accredible
   class Credential
-    attr_reader :url
 
     def self.view(id = nil)
       uri = Credential.api_end_point(id)
@@ -30,11 +29,11 @@ module Accredible
     end
 
     def self.api_end_point(id = nil)
-      @url = Accredible.api_url("credentials/#{id}")
+      Accredible.api_url("credentials/#{id}")
     end
 
     def self.view_all_end_point(achievement_id, email)
-      @view_all_url = Accredible.api_url("credentials?achievement_id=#{achievement_id}&email=#{email}")
+      Accredible.api_url("credentials?achievement_id=#{achievement_id}&email=#{email}")
     end
   end
 end

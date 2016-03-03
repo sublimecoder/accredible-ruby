@@ -18,5 +18,19 @@ describe Accredible::Credential do
 
     expect(cred).to eq("Stubbed Request")
   end
+  
+  it "#api_end_point should return the default end point" do
+    end_point = credential.api_end_point
+
+    expect(end_point).to include("accredible")
+    expect(end_point).to include("credentials")
+  end
+
+  it "#view_all_end_point should return the view all end point" do
+    end_point = credential.view_all_end_point("123", "example@example.com")
+
+    expect(end_point).to include("accredible")
+    expect(end_point).to include("credentials?achievement_id=123&email=example@example.com")
+  end
 
 end
