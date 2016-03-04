@@ -13,6 +13,12 @@ describe Accredible::Credential do
     expect(cred).to eq("Stubbed Request")
   end
 
+  it "should return a credential when view is called" do
+    cred = credential.update(achievement_id:"1234", credential: {name: "new credential name"})
+
+    expect(cred).to eq("Stubbed Request")
+  end
+
   it "should delete a credential" do
     cred = credential.delete("1234")
 

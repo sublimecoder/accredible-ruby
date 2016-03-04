@@ -1,5 +1,8 @@
 require "accredible-ruby/version"
 require "accredible-ruby/credential"
+require "accredible-ruby/template"
+require "accredible-ruby/evidence"
+require "accredible-ruby/reference"
 require "accredible-ruby/errors/accredible_error"
 require "accredible-ruby/errors/authentication_error"
 require "accredible-ruby/util"
