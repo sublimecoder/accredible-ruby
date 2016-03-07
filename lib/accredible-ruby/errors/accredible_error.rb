@@ -6,7 +6,7 @@ module Accredible
 
     def initialize(message=nil, status=nil, body=nil)
       @message = message
-      @http_status = status
+      @status = status
       @body = body
     end
 
