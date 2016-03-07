@@ -3,4 +3,5 @@
 .rvmrc
 Gemfile.lock
 tags
+coverage/
 

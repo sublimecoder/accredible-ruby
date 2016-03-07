@@ -1,8 +1,13 @@
+if ENV['CODECLIMATE_REPO_TOKEN']
+  require 'codeclimate-test-reporter'
+  CodeClimate::TestReporter.start
+end
+
 require 'accredible'
 require 'pry'
 require 'webmock/rspec'
 
-WebMock.disable_net_connect!(allow_localhost: true)
+WebMock.disable_net_connect!(allow_localhost: true, allow: "codeclimate.com")
 
 Dir["./spec/support/**/*.rb"].each {|f| require f}
 
