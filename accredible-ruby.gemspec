@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.name          = 'accredible-ruby'
   s.version       = Accredible::VERSION
   s.required_ruby_version = '>= 2.0.0'
-  s.date          = '2016-03-04'
+  s.date          = '2016-03-07'
   s.summary       = "Accredible API gem"
   s.description   = "A simple gem for interacting with the accredible certificate API"
   s.authors       = ["Jared Smith"]
