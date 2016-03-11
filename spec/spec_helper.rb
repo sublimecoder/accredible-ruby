@@ -3,7 +3,7 @@ if ENV['CODECLIMATE_REPO_TOKEN']
   CodeClimate::TestReporter.start
 end
 
-require 'accredible'
+require 'accredible-ruby'
 require 'pry'
 require 'webmock/rspec'
 
