@@ -14,6 +14,8 @@ Gem::Specification.new do |s|
   s.homepage      = 'https://github.com/sublimecoder/accredible'
   s.license       = 'MIT'
 
+  s.files = `git ls-files`.split("\n")
+
   s.add_dependency("rest-client", "~> 1.8")
 
   s.add_development_dependency("byebug", "~> 8.2")
