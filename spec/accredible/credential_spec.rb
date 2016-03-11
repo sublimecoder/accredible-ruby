@@ -7,6 +7,14 @@ describe Accredible::Credential do
     expect(credentials).to eq("Stubbed Request")
   end
 
+  it "should create a credential when create is called" do
+    cred = credential.create(
+      recipient: recipient_details,
+      credential: credential_details)
+
+    expect(cred).to eq("Stubbed Request")
+  end
+
   it "should return a credential when view is called" do
     cred = credential.view("1234")
 

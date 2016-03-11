@@ -27,6 +27,9 @@ module Accredible
 
   def self.request(end_point_url, method = :get, values = {})
     Accredible.check_api_key
+
+    request_headers = Accredible.request_headers
+
     if method == :get
       RestClient.get(end_point_url, request_headers) 
     elsif method == :put
