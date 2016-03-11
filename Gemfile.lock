@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    accredible-ruby (0.1.4)
+    accredible-ruby (0.1.6)
       rest-client (~> 1.8)
 
 GEM
