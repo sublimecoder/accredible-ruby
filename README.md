@@ -44,19 +44,18 @@ Accredible::Credential.create(
     credential: credential,
     evidence: evidence,
     references: references)
-  ```
+```
 
-  Supported Ruby versions
-  -----------------------
+Supported Ruby versions
+-----------------------
   Currently only Ruby 2.0+ is supported. Contributions are welcome if you need to
   support a different version.
 
-  License
-  -------
-  Accredible-Ruby is is free software, and may be redistributed under the 
-  terms specified in the [LICENSE](/LICENSE) file.
+License
+-------
+Accredible-Ruby is is free software, and may be redistributed under the 
+terms specified in the [LICENSE](/LICENSE) file.
 
-  Thanks to
-  ---------
-  [One Month](http://onemonth.com) - For allowing this gem to be extracted and open
-  sourced.
+Thanks to
+---------
+[One Month](http://onemonth.com) - For allowing this gem to be extracted and open sourced.
