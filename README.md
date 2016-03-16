@@ -29,17 +29,19 @@ credential = {name: "#{course.title}",
   [{description: "Evidence of completion",
     url: "http://example.com/evidence",
     category: "url"},
-   {description: "Evidence of completion 2",
-    file: "https://s3.amazonaws.com/accredible_api_evidence_items/files/12/original/open-uri20140316-15266-1m3by6h.jpeg",
-    category: "file"}]
-  references= [{description: "John worked hard", 
-     relationship: "managed",
-     referee: {name: "Jane Doe", 
-               email: "jane@example.com",
-               avatar: "https://placehold.it/100x100"}}
-     ]
+{description: "Evidence of completion 2",
+file: "https://s3.amazonaws.com/accredible_api_evidence_items/files/12/original/open-uri20140316-15266-1m3by6h.jpeg",
+      category: "file"}]
+      references= [{description: "John worked hard", 
+        relationship: "managed",
+        referee: {name: "Jane Doe", 
+          email: "jane@example.com",
+          avatar: "https://placehold.it/100x100"}}
+      ]
 
-Accredible::Credential.create(recipient: recipient, credential: credential,
+Accredible::Credential.create(
+    recipient: recipient, 
+    credential: credential,
     evidence: evidence,
     references: references)
   ```
