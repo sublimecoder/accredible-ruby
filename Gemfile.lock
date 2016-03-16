@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    accredible-ruby (0.1.7)
+    accredible-ruby (0.1.8)
       rest-client (~> 1.8)
 
 GEM
@@ -16,7 +16,7 @@ GEM
       safe_yaml (~> 1.0.0)
     diff-lcs (1.2.5)
     docile (1.1.5)
-    domain_name (0.5.25)
+    domain_name (0.5.20160309)
       unf (>= 0.0.5, < 1.0.0)
     http-cookie (1.0.2)
       domain_name (~> 0.5)
@@ -58,7 +58,7 @@ GEM
     slop (3.6.0)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.7.1)
+    unf_ext (0.0.7.2)
     webmock (1.16.1)
       addressable (>= 2.2.7)
       crack (>= 0.3.2)

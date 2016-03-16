@@ -21,7 +21,7 @@ module CredentialHelper
 
   def reference_details
     {description: "John worked hard", 
-     relationshi: "managed",
+     relationship: "managed",
      referee: {name: "Jane Doe", 
                email: "jane@example.com",
                avatar: "https://placehold.it/100x100"}}
