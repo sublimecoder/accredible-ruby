@@ -22,6 +22,7 @@ module Accredible
   end
 
   def self.api_url(url='', api_base_url=nil)
+    Accredible.check_api_key
     (api_base_url || @api_base) + "/#{@api_version}/"+ url
   end
 
