@@ -1,4 +1,12 @@
 # accredible
+Overview
+--------
+The Accredible platform enables organizations to create, manage and distribute digital credentials as digital certificates or open badges.
+
+An example digital certificate and badge can be viewed here: https://www.credential.net/10000005
+
+This gem wraps the Accredible API in Ruby for easy integration into projects. Full API documentation can be found here: http://docs.accrediblecredentialapi.apiary.io/ 
+
 Install
 --------
 Add the following line to Gemfile:
@@ -14,6 +22,20 @@ Accredible.api_key = ENV['ACCREDIBLE_API_KEY']
 ```
 
 Basic Usage
+-----------
+```ruby
+# creating a certificate
+recipient = {name: "Jared Smith", email: "example@example.com"}
+credential = {name: "#{course.title}",
+  cohort_name: "Example Cohort",
+  description: "A certificate of completion for a cool course"}
+
+Accredible::Credential.create(
+    recipient: recipient, 
+    credential: credential)
+```
+
+Further Examples
 -----------
 ```ruby
 # creating a certificate
