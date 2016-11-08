@@ -6,8 +6,8 @@ module Accredible
       Accredible.request(uri) 
     end
 
-    def self.create(recipient:, credential:, evidence: [], references: [])
-      params = Util.build_create_credential_params(recipient, credential, evidence, references)
+    def self.create(recipient:, credential:, evidence: [], references: [], group:)
+      params = Util.build_create_credential_params(recipient, credential, evidence, references, group)
       uri = Credential.api_end_point
       Accredible.request(uri, :post, params)
     end

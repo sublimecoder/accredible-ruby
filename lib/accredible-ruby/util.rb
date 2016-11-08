@@ -1,9 +1,10 @@
 module Accredible
   class Util
-    def self.build_create_credential_params(recipient={}, credential={}, evidence = {}, references = {})
+    def self.build_create_credential_params(recipient={}, credential={}, evidence = {}, references = {}, group)
       credential[:recipient] = recipient
       credential[:evidence_items] = evidence unless evidence.empty?
       credential[:references] = references unless references.empty?
+      credential[:group] = group
       { credential: credential }.to_json
     end
 
