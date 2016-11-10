@@ -12,19 +12,19 @@ module Accredible
       Accredible.request(uri, :post, params)
     end
 
-    def self.update(achievement_id:, credential: {})
-      uri =  Credential.api_end_point(achievement_id)
+    def self.update(id:, credential: {})
+      uri =  Credential.api_end_point(id)
       params = {credential: credential}.to_json
       Accredible.request(uri, :put, params)
     end
 
-    def self.delete(achievement_id)
-      uri =  Credential.api_end_point(achievement_id)
+    def self.delete(id)
+      uri =  Credential.api_end_point(id)
       Accredible.request(uri, :delete)
     end
 
-    def self.view_all(achievement_id, email)
-      uri = Credential.view_all_end_point(achievement_id, email)
+    def self.view_all(group_id, email, page=1,page_size=20)
+      uri = Credential.view_all_end_point(group_id, email, page, page_size)
       Accredible.request(uri)
     end
 
@@ -32,8 +32,8 @@ module Accredible
       Accredible.api_url("credentials/#{id}")
     end
 
-    def self.view_all_end_point(achievement_id, email)
-      Accredible.api_url("credentials?achievement_id=#{achievement_id}&email=#{email}")
+    def self.view_all_end_point(group_id, email,page=1,page_size=20)
+      Accredible.api_url("all_credentials?group_id=#{group_id}&email=#{email}&page=#{page}&page_size={page_size}")
     end
   end
 end

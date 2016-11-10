@@ -6,8 +6,8 @@ module CredentialHelper
 
   def credential_details
     {name: "My Credential", 
-     cohort_name: "cohort_123", 
-     description: "description of credential"}
+     description: "description of credential",
+     group_name: "testing group"}
   end
 
   def evidence_list
