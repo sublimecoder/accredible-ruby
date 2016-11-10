@@ -21,8 +21,8 @@ describe Accredible::Credential do
     expect(cred).to eq("Stubbed Request")
   end
 
-  it "should return a credential when view is called" do
-    cred = credential.update(achievement_id:"1234", credential: {name: "new credential name"})
+  it "should update a credential when update is called" do
+    cred = credential.update(id:"1234", credential: {name: "new credential name"})
 
     expect(cred).to eq("Stubbed Request")
   end
@@ -44,7 +44,7 @@ describe Accredible::Credential do
     end_point = credential.view_all_end_point("123", "example@example.com")
 
     expect(end_point).to include("accredible")
-    expect(end_point).to include("credentials?achievement_id=123&email=example@example.com")
+    expect(end_point).to include("credentials?group_id=123&email=example@example.com")
   end
 
 end
