@@ -1,5 +1,5 @@
 $:.unshift(File.join(File.dirname(__FILE__), 'lib'))
-require 'accredible-ruby/version'
+require 'accredible-api-ruby/version'
 
 Gem::Specification.new do |s|
   s.name          = 'accredible-api-ruby'

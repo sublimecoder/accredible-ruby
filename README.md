@@ -12,7 +12,7 @@ Install
 Add the following line to Gemfile:
 
 ```ruby
-gem 'accredible-ruby'
+gem 'accredible-api-ruby'
 ```
 and run `bundle install` from your shell.
 Then add the following line to an initializer, or appropriate config file.
@@ -114,7 +114,7 @@ Supported Ruby versions
 
 License
 -------
-Accredible-Ruby is is free software, and may be redistributed under the 
+Accredible-API-Ruby is is free software, and may be redistributed under the 
 terms specified in the [LICENSE](/LICENSE) file.
 
 Thanks to
