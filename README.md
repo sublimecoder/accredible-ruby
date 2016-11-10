@@ -27,7 +27,7 @@ Basic Usage
 # creating a certificate
 recipient = {name: "Jared Smith", email: "example@example.com"}
 credential = {name: "#{course.title}",
-  cohort_name: "Example Cohort",
+  group_name: "Example Group",
   description: "A certificate of completion for a cool course"}
 
 Accredible::Credential.create(
@@ -41,7 +41,7 @@ Further Examples
 # creating a certificate
 recipient = {name: "Jared Smith", email: "example@example.com"}
 credential = {name: "#{course.title}",
-  cohort_name: "Example Cohort",
+  group_name: "Example Group",
   description: "A certificate of completion for a cool course",
   issued_on: "2016-03-15",
   course_link: "http://onemonth.com/courses/one-month-rails"}
@@ -66,8 +66,22 @@ Accredible::Credential.create(
     credential: credential,
     evidence: evidence,
     references: references)
-```
 
+# creating a group
+group = 
+  {
+        "name": "new group",
+        "course_name": "Intro to Prgramming",
+        "course_description": "Description of course",
+        "course_link": "http://www.example.com",
+        "language": "en",
+        "attach_pdf": false
+    }
+
+Accredible::Group.create(
+    group: group, 
+    design_id: 12)
+```
 Supported Ruby versions
 -----------------------
   Currently only Ruby 2.0+ is supported. Contributions are welcome if you need to
