@@ -7,6 +7,8 @@ An example digital certificate and badge can be viewed here: https://www.credent
 
 This gem wraps the Accredible API in Ruby for easy integration into projects. Full API documentation can be found here: http://docs.accrediblecredentialapi.apiary.io/ 
 
+We forked the original by sublimecoder so that we can provide updates without interfering with their active usage. This repository and gem are the officially maintained Ruby wrappers for Accredible.
+
 Install
 --------
 Add the following line to Gemfile:
