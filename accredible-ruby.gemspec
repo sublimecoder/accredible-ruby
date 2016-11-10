@@ -2,7 +2,7 @@ $:.unshift(File.join(File.dirname(__FILE__), 'lib'))
 require 'accredible-ruby/version'
 
 Gem::Specification.new do |s|
-  s.name          = 'accredible/accredible-ruby'
+  s.name          = 'accredible-api-ruby'
   s.version       = Accredible::VERSION
   s.required_ruby_version = '>= 2.0.0'
   s.date          = '2016-03-11'
@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.authors       = ["Jared Smith", "Deepender Singla", "Alan Heppenstall"]
   s.email         = 'deepender@accredible.com'
   s.require_paths = ['lib']
-  s.homepage      = 'https://github.com/accredible/accredible-ruby'
+  s.homepage      = 'https://github.com/accredible/accredible-api-ruby'
   s.license       = 'MIT'
 
   s.files = `git ls-files`.split("\n")
