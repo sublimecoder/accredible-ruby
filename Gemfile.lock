@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    accredible-ruby (0.1.10)
+    accredible/accredible-ruby (0.1.10)
       rest-client (~> 1.8)
 
 GEM
@@ -67,7 +67,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  accredible-ruby!
+  accredible/accredible-ruby!
   byebug (~> 8.2)
   codeclimate-test-reporter
   pry (~> 0.10)
