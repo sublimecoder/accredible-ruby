@@ -1,7 +1,7 @@
 ![Accredible Logo](https://s3.amazonaws.com/accredible-cdn/accredible_logo_sm.png)
 
 # Accredible API Ruby SDK
-![Build Status](https://travis-ci.org/accredible/accredible-ruby.svg?branch=master)
+![Build Status](https://travis-ci.org/accredible/accredible-api-ruby.svg?branch=master)
 
 Overview
 --------
