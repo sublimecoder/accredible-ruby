@@ -11,5 +11,10 @@ module Accredible
     def self.build_update_credential_params(credential)
       { credential: credential }.to_json
     end
+
+    def self.build_create_group_params(group,design_id)
+      group[:design_id] = design_id
+      {group: group}.to_json
+    end
   end
 end

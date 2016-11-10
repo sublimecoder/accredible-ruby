@@ -16,6 +16,7 @@ RSpec.configure do |config|
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true
     config.include CredentialHelper
     config.include EvidenceHelper
+    config.include GroupHelper
   end
 
   config.mock_with :rspec do |mocks|
