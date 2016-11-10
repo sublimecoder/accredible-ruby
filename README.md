@@ -9,7 +9,7 @@ The Accredible platform enables organizations to create, manage and distribute d
 
 An example digital certificate and badge can be viewed here: https://www.credential.net/10000005
 
-This gem wraps the Accredible API in Ruby for easy integration into projects. Full API documentation can be found here: http://docs.accrediblecredentialapi.apiary.io/ 
+This gem wraps the Accredible API in Ruby for easy integration into projects. The full REST API documentation can be found here: http://docs.accrediblecredentialapi.apiary.io/ 
 
 We forked the original by sublimecoder so that we can provide updates without interfering with their active usage. This repository and gem are the officially maintained Ruby wrappers for Accredible.
 
