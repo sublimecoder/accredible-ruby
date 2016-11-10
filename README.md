@@ -1,6 +1,8 @@
 ![Accredible Logo](https://s3.amazonaws.com/accredible-cdn/accredible_logo_sm.png)
 
 # Accredible API Ruby SDK
+![Build Status](https://travis-ci.org/accredible/accredible-ruby.svg?branch=master)
+
 Overview
 --------
 The Accredible platform enables organizations to create, manage and distribute digital credentials as digital certificates or open badges.
