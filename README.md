@@ -38,13 +38,11 @@ Accredible::Credential.create(
 Further Examples
 -----------
 ```ruby
-# creating a certificate
+# creating a credential
 recipient = {name: "Jared Smith", email: "example@example.com"}
-credential = {name: "#{course.title}",
+credential = {
   group_name: "Example Group",
-  description: "A certificate of completion for a cool course",
-  issued_on: "2016-03-15",
-  course_link: "http://onemonth.com/courses/one-month-rails"}
+  issued_on: "2016-03-15"}
 
 # evidence and references are both optional but can be constructed like this
   evidence =
@@ -67,6 +65,16 @@ Accredible::Credential.create(
     evidence: evidence,
     references: references)
 
+#updating a credential
+credential = {reciopient: {name: "Updated Name"}}
+Accredible::Credential.update(id:"1234", credential: {name: "new credential name"})
+
+#deleting a credential
+cred = Accredible::Credential.delete("1234")
+
+#for viewing all credentials
+groups = Accredible::Credential.view_all(group_id: "1234", email: "student@example.com")
+
 # creating a group
 group = 
   {
@@ -78,9 +86,26 @@ group =
         "attach_pdf": false
     }
 
+
 Accredible::Group.create(
     group: group, 
     design_id: 12)
+
+#updating a group
+Accredible::Group.update(group_id:"1234", group: {name: "new group name"})
+
+#deleting a group
+Accredible::Group.delete(group_id:"1234")
+
+#for viewing a group
+Accredible::Group.view("1234")
+
+#for viewing all groups
+groups = Accredible::Group.view_all
+
+#for viewing all designs
+designs = Accredible::Design.view_all
+
 ```
 Supported Ruby versions
 -----------------------
