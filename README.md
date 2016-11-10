@@ -1,13 +1,23 @@
-# accredible
+![Accredible Logo](https://s3.amazonaws.com/accredible-cdn/accredible_logo_sm.png)
+
+# Accredible API Ruby SDK
+![Build Status](https://travis-ci.org/accredible/accredible-ruby.svg?branch=master)
+
 Overview
 --------
 The Accredible platform enables organizations to create, manage and distribute digital credentials as digital certificates or open badges.
 
 An example digital certificate and badge can be viewed here: https://www.credential.net/10000005
 
-This gem wraps the Accredible API in Ruby for easy integration into projects. Full API documentation can be found here: http://docs.accrediblecredentialapi.apiary.io/ 
+This gem wraps the Accredible API in Ruby for easy integration into projects. The full REST API documentation can be found here: http://docs.accrediblecredentialapi.apiary.io/ 
 
 We forked the original by sublimecoder so that we can provide updates without interfering with their active usage. This repository and gem are the officially maintained Ruby wrappers for Accredible.
+
+Example Output
+--------------
+![Example Digital Certificate](https://s3.amazonaws.com/accredible-cdn/example-digital-certificate.png)
+
+![Example Open Badge](https://s3.amazonaws.com/accredible-cdn/example-digital-badge.png)
 
 Install
 --------
@@ -113,6 +123,13 @@ Supported Ruby versions
 -----------------------
   Currently only Ruby 2.0+ is supported. Contributions are welcome if you need to
   support a different version.
+
+Bug reports
+-----------
+
+If you discover any bugs, feel free to create an issue on GitHub. Please add as much information as possible to help us fixing the possible bug. We also encourage you to help even more by forking and sending us a pull request.
+
+https://github.com/accredible/accredible-api-ruby/issues
 
 License
 -------
