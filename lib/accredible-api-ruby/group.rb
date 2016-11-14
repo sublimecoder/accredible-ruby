@@ -6,8 +6,8 @@ module Accredible
       Accredible.request(uri, :delete)
     end
 
-    def self.view_all
-      uri = Group.view_all_end_point
+    def self.view_all(page=1,page_size=40)
+      uri = Group.view_all_end_point(page, page_size)
       Accredible.request(uri)
     end
 
@@ -33,8 +33,8 @@ module Accredible
     end
 
 
-    def self.view_all_end_point
-      Accredible.api_url("/issuer/group")
+    def self.view_all_end_point(page,page_size)
+      Accredible.api_url("/issuer/all_groups?page=#{page}&page_size={page_size}")
     end
   end
 end

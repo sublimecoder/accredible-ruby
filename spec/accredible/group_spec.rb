@@ -40,10 +40,10 @@ describe Accredible::Group do
   end
 
   it "#view_all_end_point should return the view all end point" do
-    end_point = group.view_all_end_point
+    end_point = group.view_all_end_point(1,20)
 
     expect(end_point).to include("accredible")
-    expect(end_point).to include("group")
+    expect(end_point).to include("all_groups")
     expect(end_point).to include("issuer")
   end
 
