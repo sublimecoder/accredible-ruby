@@ -33,7 +33,8 @@ module Accredible
     end
 
     def self.view_all_end_point(group_id, email,page=1,page_size=20)
-      Accredible.api_url("all_credentials?group_id=#{group_id}&email=#{email}&page=#{page}&page_size={page_size}")
+      # binding.pry
+      Accredible.api_url("all_credentials?group_id=#{group_id}&email=#{email}&page=#{page}&page_size=#{page_size}")
     end
   end
 end
