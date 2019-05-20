@@ -4,7 +4,7 @@ require 'accredible-api-ruby/version'
 Gem::Specification.new do |s|
   s.name          = 'accredible-api-ruby'
   s.version       = Accredible::VERSION
-  s.required_ruby_version = '>= 2.0.0'
+  s.required_ruby_version = '>= 2.3.0'
   s.date          = '2016-03-11'
   s.summary       = "Accredible API gem"
   s.description   = "A simple gem for interacting with the accredible certificate & badge API"
@@ -24,5 +24,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency("rake", "~> 10.5")
   s.add_development_dependency("rspec", "~> 3.4")
   s.add_development_dependency("webmock", "~> 1.16.1")
-
+  s.add_development_dependency('rb-readline')
 end
