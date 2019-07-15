@@ -44,7 +44,7 @@ describe Accredible::Credential do
     end_point = credential.view_all_end_point("123", "example@example.com")
 
     expect(end_point).to include("accredible")
-    expect(end_point).to include("credentials?group_id=123&email=example@example.com")
+    expect(end_point).to include("credentials?page=1&page_size=20&group_id=123&email=example@example.com")
   end
 
 end

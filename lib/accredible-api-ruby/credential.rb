@@ -23,7 +23,7 @@ module Accredible
       Accredible.request(uri, :delete)
     end
 
-    def self.view_all(group_id, email, page=1,page_size=20)
+    def self.view_all(group_id=nil, email=nil, page=1,page_size=20)
       uri = Credential.view_all_end_point(group_id, email, page, page_size)
       Accredible.request(uri)
     end
@@ -32,8 +32,17 @@ module Accredible
       Accredible.api_url("credentials/#{id}")
     end
 
-    def self.view_all_end_point(group_id, email,page=1,page_size=20)
-      Accredible.api_url("all_credentials?group_id=#{group_id}&email=#{email}&page=#{page}&page_size=#{page_size}")
+    def self.view_all_end_point(group_id=nil, email=nil,page=1,page_size=20)
+      params = {
+        page:      page,
+        page_size: page_size
+      }
+      params[:group_id] = group_id if !!group_id
+      params[:email]    = email    if !!email
+
+      param_string = params.map { |x| "#{x[0]}=#{x[1]}" }.join("&")
+
+      Accredible.api_url("all_credentials?#{param_string}")
     end
   end
 end
