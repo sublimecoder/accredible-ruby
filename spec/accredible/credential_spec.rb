@@ -2,7 +2,7 @@ describe Accredible::Credential do
   let(:credential) { Accredible::Credential }
 
   it "should return a list of credentials when view_all is called" do
-    credentials = credential.view_all("1234", "example@example.com")
+    credentials = credential.view_all(group_id: "1234", email: "example@example.com")
 
     expect(credentials).to eq("Stubbed Request")
   end
@@ -41,7 +41,7 @@ describe Accredible::Credential do
   end
 
   it "#view_all_end_point should return the view all end point" do
-    end_point = credential.view_all_end_point("123", "example@example.com")
+    end_point = credential.view_all_end_point(group_id: "123", email: "example@example.com")
 
     expect(end_point).to include("accredible")
     expect(end_point).to include("credentials?page=1&page_size=20&group_id=123&email=example@example.com")
